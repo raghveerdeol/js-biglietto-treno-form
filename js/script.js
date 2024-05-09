@@ -27,5 +27,6 @@ if (userAge.value < 18) {
 price = kmPrice - ((kmPrice / 100) * sconto);
 
 
-    console.log(userDistance.value, userAge.value,  kmPrice,  price)
+    console.log(userDistance.value, userAge.value,  kmPrice,  price);
+    document.getElementById('prezzo').innerHTML = 'il tuo biglietto costa' + ' ' + price.toFixed(2)+'\u20AC';
 })

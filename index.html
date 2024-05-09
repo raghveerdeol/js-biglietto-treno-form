@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto treno form</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div>
-        <input type="text" name="userDistance" id="userDistance" placeholder="Inserire la distanza da percorere">
-        <input type="text" name="età" id="userAge" placeholder="Inserire l'età del passeggero'">
-        <button>send</button>
+        
+        <div class="container">
+            <img src="./img/train.jpeg" alt="train">
+            <h1>compra il tuo Biglietto per hogwarts</h1>
+            <label for="userDistance">Inserire la distanza da percorere:</label>
+            <input type="text" name="userDistance" id="userDistance" placeholder="Inserire la distanza" required >
+            <label for="userAge">inserire l'età del passeggero:</label>
+            <input type="text" name="età" id="userAge" placeholder="Inserire l'età" required >
+            <button>send</button>
+            <h2 id="prezzo"></h2>
+        </div>
+        
     </div>
 
     <script src="./js/script.js"></script>
