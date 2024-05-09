@@ -25,7 +25,7 @@ if (userAge.value < 18) {
     sconto = 0; 
 }
 price = kmPrice - ((kmPrice / 100) * sconto);
-
+    document.getElementById('calcolo').innerHTML = 'prezzo chilometri:' + ' '+ kmPrice +'\u20AC' + ',' + 'sconto;'+ ' ' + sconto +'%';
 
     console.log(userDistance.value, userAge.value,  kmPrice,  price);
     document.getElementById('prezzo').innerHTML = 'il tuo biglietto costa' + ' ' + price.toFixed(2)+'\u20AC';
